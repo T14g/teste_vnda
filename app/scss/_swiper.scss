@@ -1,0 +1,7 @@
+.swiper-container {
+    width: 100%;
+    height: calc(100vh - 76px);
+
+    .swiper-button-prev::after, .swiper-button-next::after{color: $black}
+    
+}
