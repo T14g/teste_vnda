@@ -4,6 +4,10 @@
         font-family: $ptSans;
         font-size: 45px;
         line-height: 1;
+
+        @media(max-width:1200px){
+            font-size: 30px;
+        }
     }
 
     p{
@@ -47,6 +51,10 @@
         .container{
             max-width:1200px;
             margin: 0 auto;
+
+            @media(max-width:1200px){
+                max-width: 1000px;
+            }
 
             &::after{
                 content:"";
@@ -97,6 +105,10 @@
             text-transform: uppercase;
             font-weight: 900;
             font-size: 25px;
+
+            @media(max-width:1200px){
+                font-size: 20px;
+            }
         }
 
         p{
@@ -159,6 +171,15 @@
             left: 50%;
             transform: translateX(-50%);
 
+            @media(max-width:1200px){
+                width: 100%;
+                max-width: 1000px;
+                position: relative;
+                left: initial;
+                transform: initial;
+                margin: 0 auto;
+            }
+
             &::after{
                 display: table;
                 clear: both;
@@ -172,6 +193,19 @@
             .right-photo{
                 float: right;
                 margin-top: 75px;
+
+                @media(max-width:1200px){
+                    width: 270px;
+                    height: auto;
+                    margin-top: 72px;
+                }
+            }
+
+            .left-photo{
+                @media(max-width:1200px){
+                    width: 255px;
+                    height: auto;
+                }
             }
 
 
@@ -185,10 +219,20 @@
                     margin: 0;
                     font-size: 35px;
                     max-width: 200px;
+
+                    @media(max-width:1200px){
+                        font-size: 25px;
+                    }
                 }
 
                 p{
                     margin: 24px 0px;
+
+                    @media(max-width:1200px){
+                        margin: 10px 0;
+
+                        font-size: 18px;
+                    }
                 }
                 
 
@@ -203,6 +247,10 @@
                     font-size: 20px;
                     color: $white;
                     margin-top: 10px;
+
+                    @media(max-width:1200px){
+                        margin-top: 0px;
+                    }
 
                     &:hover{
                         opacity: 0.7;
@@ -221,6 +269,10 @@
         max-width:1200px;
         margin: 0 auto;
 
+        @media(max-width:1200px){
+            max-width: 1000px;
+        }
+
         &::after{
             display: table;
             content: "";
@@ -236,6 +288,11 @@
         img{
             box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
             cursor: pointer;
+
+            @media(max-width:1200px){
+                width: 300px;
+                height: 300px;
+            }
         }
 
         .insta-text{
@@ -245,6 +302,11 @@
             margin: 50px auto 0;
             background: $gray;
             color: $pinkLight;
+
+            @media(max-width:1200px){
+                width: 300px;
+                height: 300px;
+            }
 
             &:hover{
                 cursor: pointer;
