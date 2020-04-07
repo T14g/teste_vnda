@@ -2,6 +2,11 @@
     width: 100%;
     height: calc(100vh - 76px);
 
+    @media(max-width: 641px){
+        height: 200px;
+    }
+    
+
     .swiper-button-prev::after, .swiper-button-next::after{color: $black}
     
 }
