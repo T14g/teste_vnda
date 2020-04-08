@@ -5,6 +5,7 @@ var app = {};
 
 var swiper = new Swiper('.swiper-container', {
     spaceBetween: 30,
+    autoHeight: true, //enable auto height
     centeredSlides: true,
     autoplay: {
       delay: 5000,
@@ -26,12 +27,15 @@ var swiper = new Swiper('.swiper-container', {
     
      $(".toggle-menu").click(function() {
        if (!sideMenu) {
-         $("#sidemenu").animate({right: "0"});
+         $("#sidemenu").show();
+         $("#sidemenu").animate({width: "300px"});
+
          $('body').addClass('menu-open');
          sideMenu = true;
        }
        else {
-         $("#sidemenu").animate({right: "-300px"});
+         $("#sidemenu").hide();
+         $("#sidemenu").animate({width: "1px"});
          $('body').removeClass('menu-open');
          sideMenu = false;     
        }

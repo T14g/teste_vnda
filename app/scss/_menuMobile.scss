@@ -18,12 +18,13 @@
     .hiden-menu{
         position: absolute;
         height:100vh;
-        width:300px;
+        width:1px;
         background: $gray;
-        right: -300px;
+        right: 0;
         top: 0;
         position: absolute;
         z-index: 9999;
+        display: none;
 
         .close{
             display: block;
