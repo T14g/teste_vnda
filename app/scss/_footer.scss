@@ -76,6 +76,12 @@ footer{
 
                 li{
                     margin-bottom: 5px;
+
+                    a{
+                        &:hover{
+                            opacity: 0.9;
+                        }
+                    }
                 }
             }
         }
@@ -89,6 +95,7 @@ footer{
             form{
                 max-width:400px;
                 margin: 40px auto 0;
+                border-bottom: 1px $gray solid;
 
                 @media(max-width:1200px){
                     max-width: 333px;
@@ -109,7 +116,6 @@ footer{
                     float: left;
                     border: none;
                     background: none;
-                    border-bottom: 1px $gray solid;
                     padding-bottom: 10px;
                     
                     &:active, &:focus{
@@ -138,18 +144,18 @@ footer{
                         color: $gray;
                     }
 
-                    &:focus{
-                        border-bottom: 2px $black solid;
+                    // &:focus{
+                    //     border-bottom: 2px $black solid;
 
-                        &+.btn-enviar{
-                            border-bottom: 2px $black solid;
-                        }
-                    }
+                    //     &+.btn-enviar{
+                    //         border-bottom: 2px $black solid;
+                    //     }
+                    // }
                 }
 
                 .btn-enviar{
                     width: 100%;
-                    max-width:99px;
+                    max-width:95px;
                     text-align: right;
                     display: block;
                     color:$gray;
@@ -188,6 +194,12 @@ footer{
 
                     @media(max-width: 640px){
                         margin-right: 0;
+                    }
+
+                    a{
+                        &:hover{
+                            opacity: 0.9;
+                        }
                     }
 
                     i{

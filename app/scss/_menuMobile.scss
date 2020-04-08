@@ -25,6 +25,7 @@
         position: absolute;
         z-index: 9999;
         display: none;
+        border-left: 1px $pinkLight solid;
 
         .close{
             display: block;

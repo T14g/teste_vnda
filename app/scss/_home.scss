@@ -110,6 +110,10 @@
         max-width:100%;
         display:inline-block;
 
+        @media(max-width:1000px){
+            max-width: 302px
+        }
+
         @media(max-width:640px){
             max-width: 290px;
             display: block;
