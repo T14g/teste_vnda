@@ -1,0 +1,16 @@
+.swiper-container {
+
+    .swiper-pagination-bullet-active {
+        color:#fff;
+        background: $pinkLight;
+      }
+
+    .swiper-button-prev::after, .swiper-button-next::after{color: $black}
+    
+    .swiper-button-prev, .swiper-button-next{
+        @media(max-width: 640px){
+            display: none;
+        }
+    }
+
+}
