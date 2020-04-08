@@ -21,4 +21,21 @@ var swiper = new Swiper('.swiper-container', {
   });
 
 
+  $(document).ready(function() {
+    var sideMenu = false;
+    
+     $(".toggle-menu").click(function() {
+       if (!sideMenu) {
+         $("#sidemenu").animate({right: "0"});
+         $('body').addClass('menu-open');
+         sideMenu = true;
+       }
+       else {
+         $("#sidemenu").animate({right: "-300px"});
+         $('body').removeClass('menu-open');
+         sideMenu = false;     
+       }
+     });
+ }); 
+
 //Grid

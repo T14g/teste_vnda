@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create by T14g</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -37,14 +37,17 @@
             </div>
 
             <div class="menu-mobile">
-                <a href="#" id="toggle-menu">
+                <a href="#" class="toggle-menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </a>
 
-                <div class="hiden-menu">
-                    <ul class="menu-desktop">
+                <div class="hiden-menu" id="sidemenu">
+                    <a href="#" class="toggle-menu">
+                        Close
+                    </a>
+                    <ul class="menu-mobile">
                         <li><a href="#">MENU</a></li>
                         <li><a href="#">MENU</a></li>
                         <li><a href="#">MENU</a></li>
@@ -212,14 +215,11 @@
         </div>
 
     </footer>
-     
-             
-        
-       
 
-             
-              
-           
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <script  src="node_modules/swiper/js/swiper.min.js"></script>
     <script src="dist/all.js"></script>
 </body>
